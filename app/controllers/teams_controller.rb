@@ -27,7 +27,6 @@ class TeamsController < ApplicationController
   # PATCH/PUT /teams/1
   def update
     if @team.update(team_params)
-      puts team_params.to_yaml
       render json: @team
     else
       render json: @team.errors, status: :unprocessable_entity
@@ -47,6 +46,6 @@ class TeamsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def team_params
-      params.require(:team).permit(:name, :description, :twitter, :instagram, :github, :photo, :linkedin)
+      params.permit(:name, :description, :twitter, :instagram, :github, :photo, :linkedin, :picture)
     end
 end
