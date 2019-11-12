@@ -25,10 +25,6 @@ ActiveRecord::Schema.define(version: 2019_11_12_040503) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.string "linkedin"
-    t.string "picture_file_name"
-    t.string "picture_content_type"
-    t.integer "picture_file_size"
-    t.datetime "picture_updated_at"
     t.string "picture"
   end
 
