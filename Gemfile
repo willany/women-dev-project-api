@@ -12,6 +12,9 @@ gem 'puma', '~> 3.11'
 
 gem 'mini_magick', '~> 4.3'
 gem 'carrierwave'
+gem 'aws-sdk', '~> 3'
+
+gem 'active_model_serializers', '~> 0.10.0'
 
 # PostgreSQL
 gem 'pg'
@@ -32,7 +35,7 @@ gem 'pg'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
