@@ -9,6 +9,9 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  config.require_master_key = true
+  config.read_encrypted_secrets = true
+
 
   config.action_mailer.default_url_options = { host: 'https://women-dev-projects.herokuapp.com/' }
   Rails.application.routes.default_url_options[:host] = 'https://women-dev-projects.herokuapp.com/'
