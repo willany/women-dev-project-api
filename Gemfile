@@ -12,9 +12,8 @@ gem 'puma', '~> 3.12'
 
 gem 'mini_magick', '~> 4.3'
 gem 'carrierwave'
-gem 'aws-sdk', '~> 3'
 
-gem 'active_model_serializers', '~> 0.10.0'
+gem 'rails_admin', '~> 2.0'
 
 # PostgreSQL
 gem 'pg'

@@ -1,3 +1,4 @@
 class Team < ApplicationRecord
-    has_one_attached :picture
+    validates :name, :description, :photo, presence: true
+    
 end
