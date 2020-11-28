@@ -15,6 +15,8 @@ gem 'carrierwave'
 
 gem 'rails_admin', '~> 2.0'
 
+gem 'active_model_serializers'
+
 # PostgreSQL
 gem 'pg'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
