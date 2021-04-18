@@ -15,6 +15,8 @@ gem 'carrierwave'
 
 gem 'rails_admin', '~> 2.0'
 
+gem 'aws-sdk', '~> 2'
+
 gem 'active_model_serializers'
 
 # PostgreSQL
