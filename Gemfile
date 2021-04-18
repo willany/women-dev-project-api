@@ -10,9 +10,6 @@ gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 
-gem 'mini_magick', '~> 4.3'
-gem 'carrierwave'
-
 gem 'rails_admin', '~> 2.0'
 
 gem 'aws-sdk', '~> 2'
