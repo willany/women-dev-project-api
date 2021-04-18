@@ -10,9 +10,11 @@ gem 'rails', '~> 5.2.3'
 # Use Puma as the app server
 gem 'puma', '~> 3.12'
 
+gem "mini_magick"
+
 gem 'rails_admin', '~> 2.0'
 
-gem 'aws-sdk', '~> 2'
+gem "aws-sdk-s3", require: false
 
 gem 'active_model_serializers'
 

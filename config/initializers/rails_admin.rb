@@ -30,6 +30,8 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.excluded_models = ['ActiveStorage::Blob', 'ActiveStorage::Attachment']
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory

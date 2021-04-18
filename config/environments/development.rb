@@ -9,7 +9,7 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
-  config.require_master_key = false
+  config.require_master_key = true
   config.read_encrypted_secrets = true
  
   # Show full error reports.
@@ -31,7 +31,7 @@ Rails.application.configure do
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options)
-  config.active_storage.service = :local
+  config.active_storage.service = :amazon
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
