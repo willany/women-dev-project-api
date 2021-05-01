@@ -1,6 +1,9 @@
 class TeamSerializer < ActiveModel::Serializer
+  include Rails.application.routes.url_helpers
+
   attributes :id, :name, :description, :photo, :twitter, :instagram, :github, :linkedin, :photo
+
   def photo
-    object.photo.service_url if object.photo.attached?
+    rails_blob_path(object.photo, only_path: true) if object.photo.attached?
   end
 end
